@@ -42,10 +42,10 @@ public class TwoDataSourcesService {
     }
 
     /**
-     * Saves data in persistence context for both data sources and then throws a {@link RuntimeException}.
-     * The method uses a {@link ChainedTransactionManager} configured for both data source.
+     * Saves data in persistence context for both data sources and then throws the {@link RuntimeException}.
+     * The method uses the {@link ChainedTransactionManager} configured for both data source.
      * This implementation delegates the creation, commits, and rollbacks of transactions to
-     * several instances of {@link PlatformTransactionManager}.
+     * several instances of the {@link PlatformTransactionManager}.
      *
      * @param bothDbValue value to write to both data sources.
      */
@@ -59,12 +59,12 @@ public class TwoDataSourcesService {
 
     /**
      * Saves data in persistence context for both data sources.
-     * The method uses a {@link ChainedTransactionManager} configured for both data source.
+     * The method uses the {@link ChainedTransactionManager} configured for both data source.
      * This implementation delegates the creation, commits, and rollbacks of transactions to
-     * several instances of {@link PlatformTransactionManager}.
+     * several instances of the {@link PlatformTransactionManager}.
      *
      * Note that this method correctly saves data in the persistence context without
-     * throwing a {@link RuntimeException}.
+     * throwing the {@link RuntimeException}.
      *
      * @param db1Value value to write to first data sources.
      * @param db2Value value to write to second data sources.
